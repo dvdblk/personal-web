@@ -1,0 +1,106 @@
+{
+    "tags": {
+        "python": {
+            "url": "https://img.icons8.com/color/48/000000/python--v1.png",
+            "name": "Python"
+        },
+        "discord": {
+            "url": "https://img.icons8.com/fluency/48/000000/discord-logo.png",
+            "name": "Discord"
+        },
+        "docker": {
+            "url": "https://img.icons8.com/fluency/48/000000/docker.png",
+            "name": "Docker"
+        },
+        "kubernetes": {
+            "url": "https://img.icons8.com/color/48/000000/kubernetes.png",
+            "name": "Kubernetes"
+        },
+        "react": {
+            "url": "https://img.icons8.com/officel/40/000000/react.png",
+            "name": "React"
+        },
+        "nginx": {
+            "url": "https://img.icons8.com/color/48/000000/nginx.png",
+            "name": "NGINX"
+        },
+        "bootstrap": {
+            "url": "https://img.icons8.com/color/48/000000/bootstrap.png",
+            "name": "Bootstrap"
+        },
+        "applescript": {
+            "url": "https://img.icons8.com/ios-filled/50/000000/mac-os.png",
+            "name": "Applescript"
+        },
+        "helm": {
+            "url": "https://helm.sh/img/favicon-152.png",
+            "name": "Helm"
+        },
+        "swift": {
+            "url": "https://img.icons8.com/color/48/000000/swift.png",
+            "name": "Swift"
+        },
+        "fastlane": {
+            "url": "https://fastlane.tools/assets/images/favicon.ico",
+            "name": "Fastlane"
+        },
+        "travis": {
+            "url": "https://img.icons8.com/ios/50/000000/travis-ci.png",
+            "name": "Travis CI"
+        },
+        "overwatch": {
+            "url": "https://img.icons8.com/color/48/000000/overwatch--v1.png",
+            "name": "Overwatch"
+        }
+    },
+    "projects": [
+        {
+            "name": "Swiss apartments web scraper",
+            "description": "",
+            "url": "https://github.com/dvdblk/swiss-immo-scraper",
+            "tags": ["python", "discord", "docker", "kubernetes"]
+        },
+        {
+            "name": "Homepage",
+            "description": "The website you're looking at right now.",
+            "url": "https://github.com/dvdblk/personal-web",
+            "tags": ["react", "bootstrap", "nginx", "docker"]
+        },
+        {
+            "name": "Custom default backend for NGINX Ingress Controller",
+            "description": "",
+            "url": "https://github.com/dvdblk/custom-default-backend",
+            "tags": ["kubernetes", "nginx", "docker"]
+        },
+        {
+            "name": "Kubernetes cluster configuration",
+            "description": "",
+            "url": "https://github.com/dvdblk/k8s-default-cluster-config",
+            "tags": ["kubernetes", "helm"]
+        },
+        {
+            "name": "Notability notes to pdf converter",
+            "description": "",
+            "url": "https://github.com/dvdblk/notability-notes-converter",
+            "tags": ["applescript"]
+        },
+        {
+            "name": "Betterpick iOS",
+            "description": "A team, players and leagues browser iOS app.",
+            "url": "https://github.com/uzh-footm/iOS",
+            "tags": ["swift", "fastlane", "travis"]
+        },
+        {
+            "name": "Notifire iOS",
+            "description": "",
+            "url": "https://github.com/Notifire/iOS",
+            "tags": ["swift", "fastlane"]
+        },
+        {
+            "name": "Auto reporter for Overwatch",
+            "description": "Sometimes you just need to speed things up.",
+            "url": "https://github.com/dvdblk/ow-auto-reporter",
+            "tags": ["python", "overwatch"]
+        }
+    ]
+}
