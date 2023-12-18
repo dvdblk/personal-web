@@ -43,7 +43,7 @@ function PaginatedProjectsList({ itemsPerPage }) {
                         previousClassName="pagination-previous"
                         nextClassName="pagination-next"
                         pageClassName="page-item"
-                        pageLinkClassName="page-link"
+                        pageLinkClassName="page-link text-reset"
                         breakLabel="..."
                         breakClassName="page-item"
                         breakLinkClassName="page-link"

@@ -23,7 +23,7 @@
   <div class="container min-vh-100 d-flex flex-column justify-content-between">
     <div class="container-fluid d-flex flex-column flex-fill">
       <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
-        <a href="./" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="./" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto text-reset text-decoration-none">
           <div>
             <div id="typed-strings">
               <p>david alex bielik `&#127480;&#127472;`</p>
@@ -33,6 +33,7 @@
           </div>
           <span id="typed" style="font-size: 24px"></span>
         </a>
+        <div id="theme_switcher"></div>
       </header>
       <main class="container-fluid d-flex flex-fill flex-column">
         <section class="py-5 text-center container">
@@ -94,6 +95,7 @@
   </div>
 
   <script>
+    // -- Typed strings
     var typed = new Typed('#typed', {
       stringsElement: '#typed-strings',
       startDelay: 400,
@@ -106,6 +108,21 @@
     if (typedCursor) {
       typedCursor.style.fontSize = "26px"
     }
+
+    // -- Dark mode detection
+    // Set theme to the user's preferred color scheme
+    function updateTheme() {
+      const colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ?
+        "dark" :
+        "light";
+      document.querySelector("html").setAttribute("data-bs-theme", colorMode);
+    }
+
+    // Set theme on load
+    updateTheme()
+
+    // Update theme when the preferred scheme changes
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme)
   </script>
 </body>
 

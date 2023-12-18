@@ -33,7 +33,7 @@ class ProjectCard extends React.Component {
                                 return (
                                     <span
                                         key={index}
-                                        className="badge rounded-pill badge-custom text-dark"
+                                        className="badge rounded-pill badge-custom text-reset"
                                     >
                                         <img
                                             src={this.props.tags[tag].url}
