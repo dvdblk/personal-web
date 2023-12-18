@@ -17,7 +17,7 @@ jobs:
       - name: Save release version
         id: version
         run: |
-          version=$(echo '${{toJSON(steps.release.outputs)}}' | jq -r '.["src/backend/api--version"]')
+          version=$(echo '${{toJSON(steps.release.outputs)}}' | jq -r '.["personal-web--version"]')
           echo "version=$version" >> $GITHUB_OUTPUT
     outputs:
       releases_created: ${{ steps.release.outputs.releases_created }}
@@ -33,9 +33,11 @@ jobs:
 
     steps:
       - name: Check out the repo
+        if: ${{ needs.release-please.outputs.version != 'null' }}
         uses: actions/checkout@v3
 
       - name: Log in to the Container registry
+        if: ${{ needs.release-please.outputs.version != 'null' }}
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
         with:
           registry: ghcr.io
@@ -43,7 +45,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
+        if: ${{ needs.release-please.outputs.version != 'null' }}
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ghcr.io/${{ github.repository }}/personal-web:${{ needs.release-please.outputs.version }},ghcr.io/${{ github.repository }}/personal-web:latest
+          tags: ghcr.io/${{ github.repository }}/app:${{ needs.release-please.outputs.version }},ghcr.io/${{ github.repository }}/app:latest
+          file: Dockerfile.prod
