@@ -122,7 +122,7 @@
         },
         {
             "name": "Micrograd Ports",
-            "description": "Autodifferentiation library in multiple languages. With tests.",
+            "description": "Autodifferentiation library written in multiple languages.",
             "url": "https://github.com/dvdblk/micrograd-ports",
             "tags": [
                 "haskell",
