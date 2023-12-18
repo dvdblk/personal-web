@@ -17,7 +17,7 @@ jobs:
       - name: Save release version
         id: version
         run: |
-          version=$(echo '${{toJSON(steps.release.outputs)}}' | jq -r '.["personal-web--version"]')
+          version=$(echo '${{toJSON(steps.release.outputs)}}' | jq -r '.["version"]')
           echo "version=$version" >> $GITHUB_OUTPUT
     outputs:
       version: ${{ steps.version.outputs.version }}
