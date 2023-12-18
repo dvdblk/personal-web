@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/dvdblk/personal-web/compare/personal-web-v1.0.2...personal-web-v1.1.0) (2023-12-18)
+
+
+### Features
+
+* add dark mode button ([9492243](https://github.com/dvdblk/personal-web/commit/949224348ff7ddc90075cabf0cd2e8e37b72b19f))
+
+
+### Bug Fixes
+
+* header spacing on mobile ([7a307df](https://github.com/dvdblk/personal-web/commit/7a307df997fec96e4b1eb8b497d89b81077423fc))
+
 ## [1.0.2](https://github.com/dvdblk/personal-web/compare/personal-web-v1.0.1...personal-web-v1.0.2) (2023-12-18)
 
 
