@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.0](https://github.com/dvdblk/personal-web/compare/personal-web-v0.3.0...personal-web-v1.0.0) (2023-12-18)
+
+
+### Features
+
+* update data.json ([3a6aedd](https://github.com/dvdblk/personal-web/commit/3a6aedde155041fcb32230187a5fde6748ff2e4c))
+* update index.html ([f79bbc2](https://github.com/dvdblk/personal-web/commit/f79bbc2fe2f6a638c54616ba7f6e94e267470133))
+
+
+### Miscellaneous Chores
+
+* release 1.0.0 ([6127e49](https://github.com/dvdblk/personal-web/commit/6127e499830d3f6c8c74a1b6c54aa21347ca4259))
+
 ## [0.3.0](https://github.com/dvdblk/personal-web/compare/personal-web-v0.2.0...personal-web-v0.3.0) (2023-12-18)
 
 
