@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/dvdblk/personal-web/compare/personal-web-v1.0.1...personal-web-v1.0.2) (2023-12-18)
+
+
+### Bug Fixes
+
+* fa-icons responsiveness ([c7bbe5e](https://github.com/dvdblk/personal-web/commit/c7bbe5ec346fe22a4f361418ff9d50114a22f79a))
+
 ## [1.0.1](https://github.com/dvdblk/personal-web/compare/personal-web-v1.0.0...personal-web-v1.0.1) (2023-12-18)
 
 
