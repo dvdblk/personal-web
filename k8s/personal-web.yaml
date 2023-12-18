@@ -1,0 +1,70 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: personal-web-deployment
+  namespace: personal-web
+  labels:
+    app: personal-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: personal-web
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 50%
+  template:
+    metadata:
+      labels:
+        app: personal-web
+    spec:
+      containers:
+        - name: personal-web
+          image: ghcr.io/dvdblk/personal-web/app:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "10m"
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+  name: personal-web-ingress
+  namespace: personal-web
+spec:
+    rules:
+    - host: www.dvdblk.com
+      http:
+        paths:
+        - path: /
+          backend:
+            service:
+              name: personal-web-svc
+              port:
+                number: 80
+          pathType: Prefix
+    tls:
+    - hosts:
+      - dvdblk.com
+      - www.dvdblk.com
+      secretName: personal-web-prod-cert
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: personal-web-svc
+  namespace: personal-web
+spec:
+  selector:
+    app: personal-web
+  ports:
+  - protocol: TCP
+    port: 80
