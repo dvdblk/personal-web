@@ -12,7 +12,17 @@ class ProjectCard extends React.Component {
                         className="stretched-link text-decoration-none"
                         style={{ color: "inherit" }}
                     >
-                        <h4>{this.props.project.name}</h4>
+                        <h4>
+                            {this.props.project.name}
+                            {this.props.project.wip && (
+                                <span
+                                    class="badge bg-secondary"
+                                    style={{ marginLeft: "10px" }}
+                                >
+                                    WIP 🚧
+                                </span>
+                            )}
+                        </h4>
                     </a>
 
                     <p>{this.props.project.description}</p>

@@ -4,9 +4,25 @@
             "url": "https://img.icons8.com/color/48/000000/python--v1.png",
             "name": "Python"
         },
+        "pytorch": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/640px-PyTorch_logo_icon.svg.png",
+            "name": "PyTorch"
+        },
+        "openai": {
+            "url": "https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png",
+            "name": "OpenAI"
+        },
+        "adobe-extract": {
+            "url": "https://assets-global.website-files.com/5e123ae95aa39898c605b7ad/64417a17ac48d67fa0b7ac0f_PDF%20Services%20ICON.png",
+            "name": "Adobe Extract"
+        },
         "discord": {
             "url": "https://img.icons8.com/fluency/48/000000/discord-logo.png",
             "name": "Discord"
+        },
+        "github-actions": {
+            "url": "https://avatars.githubusercontent.com/u/44036562?s=200&v=4",
+            "name": "GitHub Actions"
         },
         "docker": {
             "url": "https://img.icons8.com/fluency/48/000000/docker.png",
@@ -15,6 +31,18 @@
         "kubernetes": {
             "url": "https://img.icons8.com/color/48/000000/kubernetes.png",
             "name": "Kubernetes"
+        },
+        "kafka": {
+            "url": "https://cdn.icon-icons.com/icons2/2248/PNG/512/apache_kafka_icon_138937.png",
+            "name": "Kafka"
+        },
+        "postgresql": {
+            "url": "https://img.icons8.com/color/48/000000/postgreesql.png",
+            "name": "PostgreSQL"
+        },
+        "redis": {
+            "url": "https://img.icons8.com/color/48/000000/redis.png",
+            "name": "Redis"
         },
         "react": {
             "url": "https://img.icons8.com/officel/40/000000/react.png",
@@ -36,6 +64,10 @@
             "url": "https://img.icons8.com/color/48/000000/swift.png",
             "name": "Swift"
         },
+        "swiftui": {
+            "url": "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-128x128_2x.png",
+            "name": "SwiftUI"
+        },
         "fastlane": {
             "url": "https://fastlane.tools/assets/images/favicon.ico",
             "name": "Fastlane"
@@ -44,12 +76,92 @@
             "url": "https://img.icons8.com/ios/50/000000/travis-ci.png",
             "name": "Travis CI"
         },
+        "haskell": {
+            "url": "https://cdn-icons-png.flaticon.com/512/5968/5968259.png",
+            "name": "Haskell"
+        },
         "overwatch": {
             "url": "https://img.icons8.com/color/48/000000/overwatch--v1.png",
             "name": "Overwatch"
+        },
+        "twitter": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png",
+            "name": "Twitter"
+        },
+        "streamlit": {
+            "url": "https://seeklogo.com/images/S/streamlit-logo-1A3B208AE4-seeklogo.com.png",
+            "name": "Streamlit"
+        },
+        "web3.py": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Ethereum-icon-purple.svg/512px-Ethereum-icon-purple.svg.png?20200227011040",
+            "name": "Web3.py"
         }
     },
     "projects": [
+        {
+            "name": "GitHub Activity Recap",
+            "description": "GitHub Action that updates profile README.md with latest contributions of a user by summarizing it via ChatGPT.",
+            "url": "https://github.com/dvdblk/github-activity-recap",
+            "wip": true,
+            "tags": [
+                "python",
+                "github-actions",
+                "openai"
+            ]
+        },
+        {
+            "name": "Policy Analysis with an LLM",
+            "description": "(RAG) question answering pipeline for policy PDFs via LLMs. Hack4Good 2023 for OECD.",
+            "url": "https://github.com/dvdblk/hack4good-oecd",
+            "tags": [
+                "python",
+                "openai",
+                "adobe-extract",
+                "streamlit"
+            ]
+        },
+        {
+            "name": "Micrograd Ports",
+            "description": "Autodifferentiation library in multiple languages. With tests.",
+            "url": "https://github.com/dvdblk/micrograd-ports",
+            "tags": [
+                "haskell",
+                "swift",
+                "github-actions"
+            ]
+        },
+        {
+            "name": "Data collection for EVM-based blockchains",
+            "description": "A collection of Docker Containers and their orchestration for collecting EVM-compatible blockchains' data.",
+            "url": "https://github.com/uzh-eth-mp/app",
+            "tags": [
+                "python",
+                "docker",
+                "kafka",
+                "web3.py",
+                "postgresql",
+                "redis",
+                "github-actions"
+            ]
+        },
+        {
+            "name": "Online Handwriting Datapal",
+            "description": "iOS app for creating online handwriting recognition datasets in the format of Google Quickdraw",
+            "url": "https://github.com/dvdblk/ohwr-datapal",
+            "tags": [
+                "swiftui"
+            ]
+        },
+        {
+            "name": "Inscriber",
+            "description": "iOS app for online handwritten shape recognition from a stroke path (sequence of 2D points)",
+            "url": "https://github.com/dvdblk/inscriber",
+            "wip": true,
+            "tags": [
+                "swiftui",
+                "pytorch"
+            ]
+        },
         {
             "name": "Homepage",
             "description": "The website you're looking at right now.",
@@ -67,6 +179,18 @@
             "tags": [
                 "python",
                 "discord",
+                "docker",
+                "kubernetes"
+            ]
+        },
+        {
+            "name": "Tweet saver",
+            "description": "Python bot that filters real-time tweets and posts them to a Discord channel.",
+            "url": "https://github.com/dvdblk/tweet-saver",
+            "tags": [
+                "python",
+                "discord",
+                "twitter",
                 "docker",
                 "kubernetes"
             ]
