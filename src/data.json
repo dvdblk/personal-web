@@ -24,13 +24,9 @@
             "url": "https://img.icons8.com/color/48/000000/nginx.png",
             "name": "NGINX"
         },
-        "bootstrap": {
-            "url": "https://img.icons8.com/color/48/000000/bootstrap.png",
-            "name": "Bootstrap"
-        },
         "applescript": {
             "url": "https://img.icons8.com/ios-filled/50/000000/mac-os.png",
-            "name": "Applescript"
+            "name": "AppleScript"
         },
         "helm": {
             "url": "https://helm.sh/img/favicon-152.png",
@@ -55,52 +51,80 @@
     },
     "projects": [
         {
-            "name": "Swiss apartments web scraper",
-            "description": "",
-            "url": "https://github.com/dvdblk/swiss-immo-scraper",
-            "tags": ["python", "discord", "docker", "kubernetes"]
-        },
-        {
             "name": "Homepage",
             "description": "The website you're looking at right now.",
             "url": "https://github.com/dvdblk/personal-web",
-            "tags": ["react", "bootstrap", "nginx", "docker"]
+            "tags": [
+                "react",
+                "nginx",
+                "docker"
+            ]
+        },
+        {
+            "name": "Swiss apartments web scraper",
+            "description": "Web scraping bot that posts new apartments near Zurich to Discord.",
+            "url": "https://github.com/dvdblk/swiss-immo-scraper",
+            "tags": [
+                "python",
+                "discord",
+                "docker",
+                "kubernetes"
+            ]
         },
         {
             "name": "Custom default backend for NGINX Ingress Controller",
-            "description": "",
+            "description": "NIC compatible Docker container that serves error pages.",
             "url": "https://github.com/dvdblk/custom-default-backend",
-            "tags": ["kubernetes", "nginx", "docker"]
+            "tags": [
+                "kubernetes",
+                "nginx",
+                "docker"
+            ]
         },
         {
             "name": "Kubernetes cluster configuration",
-            "description": "",
+            "description": "Nginx Ingress, Cert Manager and other k8s apps that I use on most clusters.",
             "url": "https://github.com/dvdblk/k8s-default-cluster-config",
-            "tags": ["kubernetes", "helm"]
+            "tags": [
+                "kubernetes",
+                "helm"
+            ]
         },
         {
-            "name": "Notability notes to pdf converter",
-            "description": "",
+            "name": "Notability notes to .pdf converter",
+            "description": "An applescript that converts all Notability notes into .pdf",
             "url": "https://github.com/dvdblk/notability-notes-converter",
-            "tags": ["applescript"]
-        },
-        {
-            "name": "Betterpick iOS",
-            "description": "A team, players and leagues browser iOS app.",
-            "url": "https://github.com/uzh-footm/iOS",
-            "tags": ["swift", "fastlane", "travis"]
-        },
-        {
-            "name": "Notifire iOS",
-            "description": "",
-            "url": "https://github.com/Notifire/iOS",
-            "tags": ["swift", "fastlane"]
+            "tags": [
+                "applescript"
+            ]
         },
         {
             "name": "Auto reporter for Overwatch",
             "description": "Sometimes you just need to speed things up.",
             "url": "https://github.com/dvdblk/ow-auto-reporter",
-            "tags": ["python", "overwatch"]
+            "tags": [
+                "python",
+                "overwatch"
+            ]
+        },
+        {
+            "name": "Betterpick iOS",
+            "description": "iOS app that lets you browse FIFA teams, players and leagues.",
+            "url": "https://github.com/uzh-footm/iOS",
+            "tags": [
+                "swift",
+                "fastlane",
+                "travis"
+            ]
+        },
+        {
+            "name": "Notifire iOS",
+            "description": "A customizable notification iOS app for developers.",
+            "url": "https://github.com/Notifire/iOS",
+            "tags": [
+                "swift",
+                "fastlane"
+            ]
         }
     ]
 }

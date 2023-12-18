@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+
+  personal-web-prod:
+    extends:
+      file: docker-compose.yml
+      service: personal-web
+    container_name: personal-web-prod
+    build:
+      dockerfile: Dockerfile.prod
+    ports:
+      - "3080:80"

@@ -6,6 +6,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <meta property="og:title" content="David Bielik" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.dvdblk.com" />
+  <meta property="og:description" content="Homepage" />
+
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛷</text></svg>">
 
@@ -16,30 +21,30 @@
 
 <body class="text-center">
   <div class="container min-vh-100 d-flex flex-column justify-content-between">
-    <div>
+    <div class="container-fluid d-flex flex-column flex-fill">
       <header class="d-flex flex-wrap justify-content-center py-3 border-bottom">
         <a href="./" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto text-dark text-decoration-none">
-          <div class="text-responsive">
+          <div>
             <div id="typed-strings">
               <p>david bielik `&#127480;&#127472;`</p>
               <p>bsc. computer science `&#127464;&#127487;`</p>
               <p>msc. artificial intelligence &#8987;`&#127464;&#127469;`</p>
             </div>
           </div>
-          <span id="typed" style="font-size: 26px"></span>
+          <span id="typed" style="font-size: 24px"></span>
         </a>
       </header>
-      <main>
+      <main class="container-fluid d-flex flex-fill flex-column">
         <section class="py-5 text-center container">
           <div class="row py-lg-5">
             <div class="col-lg-6 col-md-8 mx-auto">
-              <h1 class="fw-light"></h1>
-              <p class="lead text-muted">Some projects that I have worked on are listed below. Not great, not terrible.
+              <h1 class="fw-light">My Projects</h1>
+              <p class="lead text-muted">Most of my open source projects and their tech stack are listed below.
               </p>
             </div>
           </div>
         </section>
-        <div id="projects_list"></div>
+        <div id="projects_list" class="d-flex flex-fill flex-column"></div>
       </main>
     </div>
 

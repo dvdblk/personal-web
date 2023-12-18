@@ -1,3 +1,8 @@
+body,
+html {
+    height: 100%;
+}
+
 body {
     font-family: -apple-system, "Helvetica Neue", "Lucida Grande";
 }
@@ -23,9 +28,12 @@ body {
     margin-bottom: 20px;
 }
 
-.card:hover {
-    transform: scale(1.04);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+@media (hover: hover) {
+    .card:hover {
+        transform: scale(1.04);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12),
+            0 4px 8px rgba(0, 0, 0, 0.06);
+    }
 }
 
 .card h4 {
@@ -35,10 +43,11 @@ body {
 @media (max-width: 990px) {
     .card {
         margin: 20px;
+        padding: 12px 24px 12px 24px;
     }
 }
 
-.badge-custom {
+.row > .badge-custom {
     padding: 4px 8px 4px 8px;
     margin: 4px;
     background-color: #ebeff2;
@@ -46,4 +55,50 @@ body {
 
 .badge-custom span {
     margin-left: 4px;
+}
+
+ul.pagination > .pagination-previous,
+ul.pagination > .pagination-next {
+    display: none;
+}
+
+.page-link:focus {
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.pagination > li > a {
+    background-color: white;
+    color: black;
+    border-color: #ebeff2;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:hover {
+    color: black;
+    background-color: #ddd;
+    border-color: #ebeff2;
+}
+
+.pagination > .page-item:nth-of-type(2) > a {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.pagination > .page-item:nth-last-of-type(2) > a {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.pagination > .active > a {
+    color: black !important;
+    background-color: #ebeff2 !important;
+    border: solid 1px #ebeff2 !important;
+}
+
+.pagination > .active > a:hover {
+    /* background-color: #ccc !important;
+    border: solid 1px #ccc; */
+    cursor: default;
 }
