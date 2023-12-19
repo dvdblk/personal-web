@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/dvdblk/personal-web/compare/personal-web-v1.1.0...personal-web-v1.1.1) (2023-12-19)
+
+
+### Bug Fixes
+
+* header font sizing ([bb8c580](https://github.com/dvdblk/personal-web/commit/bb8c5800c860fef8c8fe6002e6ccf19bbe487183))
+
 ## [1.1.0](https://github.com/dvdblk/personal-web/compare/personal-web-v1.0.2...personal-web-v1.1.0) (2023-12-18)
 
 
