@@ -135,3 +135,7 @@ ul.pagination > .pagination-next {
     background-color: var(--color-dark-pagination-active) !important;
     border: solid 1px var(--color-dark-pagination-active) !important;
 }
+
+#typed {
+    font-size: min(5.2cqw, 24px);
+}

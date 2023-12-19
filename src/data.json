@@ -132,7 +132,7 @@
         },
         {
             "name": "Data collection for EVM-based blockchains",
-            "description": "A collection of Docker Containers and their orchestration for collecting EVM-compatible blockchains' data.",
+            "description": "An app for collecting and processing EVM-compatible blockchains' data.",
             "url": "https://github.com/uzh-eth-mp/app",
             "tags": [
                 "python",

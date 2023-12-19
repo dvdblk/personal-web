@@ -22,7 +22,7 @@
 <body class="text-center">
   <div class="container min-vh-100 d-flex flex-column justify-content-between">
     <div class="container-fluid d-flex flex-column flex-fill mb-2">
-      <header class="d-flex flex-wrap py-3 border-bottom">
+      <header class="d-flex py-3 border-bottom">
         <a href="./" class="d-flex align-items-center me-auto text-reset text-decoration-none">
           <div>
             <div id="typed-strings">
@@ -31,7 +31,7 @@
               <p>msc. artificial intelligence &#8987;`&#127464;&#127469;`</p>
             </div>
           </div>
-          <span id="typed" style="font-size: 24px"></span>
+          <span id="typed"></span>
         </a>
         <div id="theme_switcher"></div>
       </header>
@@ -58,30 +58,30 @@
                 <div class="container-fluid">
                   <div class="row gy-4 gx-5 row-cols-auto justify-content-center">
                     <a class="btn btn-social-icon" href="https://github.com/dvdblk/" target="_blank">
-                      <i class="fa fa-github fa-lg"></i>
+                      <i class="fa fa-github fa-xl"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://www.linkedin.com/in/david-alex-bielik-a71289109/"
                     target="_blank">
-                    <i class="fa fa-linkedin fa-lg"></i>
+                    <i class="fa fa-linkedin fa-xl"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://stackoverflow.com/users/4249857/dvdblk"
                       target="_blank">
-                      <i class="fa fa-stack-overflow fa-lg"></i>
+                      <i class="fa fa-stack-overflow fa-xl"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://leetcode.com/dvdblk/"
                     target="_blank">
-                    <i class="fa-solid fa-code fa-lg"></i>
+                    <i class="fa-solid fa-code fa-xl"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://www.kaggle.com/dvdblk"
                       target="_blank">
-                      <i class="fa-brands fa-kaggle fa-lg"></i>
+                      <i class="fa-brands fa-kaggle fa-xl"></i>
                     </a>
                     <a class="btn btn-social-icon" href="https://twitter.com/steepest_ascent" target="_blank">
-                      <i class="fa fa-twitter fa-lg"></i>
+                      <i class="fa fa-twitter fa-xl"></i>
                     </a>
                     <a class="btn btn-social-icon" href="mailto:me@dvdblk@@#@@#@com"
                       onmouseover="this.href=this.href.replace('@@#@@#@','.')" target="_blank">
-                      <i class="fa fa-envelope-o fa-lg"></i>
+                      <i class="fa fa-envelope-o fa-xl"></i>
                     </a>
                   </div>
                 </div>
@@ -108,21 +108,6 @@
     if (typedCursor) {
       typedCursor.style.fontSize = "26px"
     }
-
-    // -- Dark mode detection
-    // Set theme to the user's preferred color scheme
-    function updateTheme() {
-      const colorMode = window.matchMedia("(prefers-color-scheme: dark)").matches ?
-        "dark" :
-        "light";
-      document.querySelector("html").setAttribute("data-bs-theme", colorMode);
-    }
-
-    // Set theme on load
-    updateTheme()
-
-    // Update theme when the preferred scheme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateTheme)
   </script>
 </body>
 
