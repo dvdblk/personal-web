@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/dvdblk/personal-web/compare/personal-web-v1.1.1...personal-web-v1.1.2) (2024-01-09)
+
+
+### Bug Fixes
+
+* content ([72bdcef](https://github.com/dvdblk/personal-web/commit/72bdcefa5f194440027f438e57f75d7922d3e409))
+
 ## [1.1.1](https://github.com/dvdblk/personal-web/compare/personal-web-v1.1.0...personal-web-v1.1.1) (2023-12-19)
 
 
