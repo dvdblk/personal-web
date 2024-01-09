@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/dvdblk/personal-web/compare/personal-web-v1.1.2...personal-web-v1.1.3) (2024-01-09)
+
+
+### Miscellaneous Chores
+
+* release 1.1.3 ([7279c06](https://github.com/dvdblk/personal-web/commit/7279c0687dbfa5d36c473812abf88e977c186bc3))
+
 ## [1.1.2](https://github.com/dvdblk/personal-web/compare/personal-web-v1.1.1...personal-web-v1.1.2) (2024-01-09)
 
 
