@@ -14,7 +14,7 @@
         },
         "adobe-extract": {
             "url": "https://assets-global.website-files.com/5e123ae95aa39898c605b7ad/64417a17ac48d67fa0b7ac0f_PDF%20Services%20ICON.png",
-            "name": "Adobe Extract"
+            "name": "Adobe Extract API"
         },
         "discord": {
             "url": "https://img.icons8.com/fluency/48/000000/discord-logo.png",
@@ -99,17 +99,6 @@
     },
     "projects": [
         {
-            "name": "GitHub Activity Recap",
-            "description": "GitHub Action that updates profile README.md with latest contributions of a user by summarizing it via ChatGPT.",
-            "url": "https://github.com/dvdblk/github-activity-recap",
-            "wip": true,
-            "tags": [
-                "python",
-                "github-actions",
-                "openai"
-            ]
-        },
-        {
             "name": "Policy Analysis with an LLM",
             "description": "(RAG) question answering pipeline for policy PDFs via LLMs. Hack4Good 2023 for OECD.",
             "url": "https://github.com/dvdblk/hack4good-oecd",
@@ -169,7 +158,8 @@
             "tags": [
                 "react",
                 "nginx",
-                "docker"
+                "docker",
+                "kubernetes"
             ]
         },
         {
